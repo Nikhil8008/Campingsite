@@ -20,7 +20,9 @@ mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
 mongoose.set('useUnifiedTopology', true);
 
-mongoose.connect("mongodb://localhost:27017/yelp_camp_v6", {
+
+// mongoose.connect("mongodb://localhost/yelp_camp_v6");
+mongoose.connect("mongodb+srv://Nikhil:NikhilP@1997@cluster0.ukfo8.mongodb.net/<YelpCamp_v6>?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
